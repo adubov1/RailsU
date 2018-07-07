@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2018_07_05_193222) do
     t.datetime "updated_at", null: false
     t.string "slug"
     t.integer "status", default: 0
-    t.index ["slug"], name: "index_blogs_on_slug", unique: true
+    t.index ["slug"], name: "index_blogs_on_slug", unique: true, using: :btree
   end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
