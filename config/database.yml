@@ -27,7 +27,7 @@ default: &default
 
 development:
   <<: *default
-  database: learningRails_development
+  database: DevcampPortfolio_development
   host: localhost
   username: railsdev
   password: alex2002
@@ -64,7 +64,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: learningRails_test
+  database: DevcampPortfolio_test
   host: localhost
   username: railsdev
   password: alex2002
@@ -90,6 +90,6 @@ test:
 #
 production:
   <<: *default
-  database: learningRails_production
-  username: learningRails
+  database: DevcampPortfolio_production
+  username: DevcampPortfolio
   password: <%= ENV['LEARNINGRAILS_DATABASE_PASSWORD'] %>
